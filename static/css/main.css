@@ -45,3 +45,11 @@ a{
 	font-size: 0.75em;
 	text-align: center;
 }
+
+.pf_blue_header {
+		color: #110d09;
+    text-shadow: 2px 1px 11px #6d6c6b;
+}
+.pf_blue {
+	color: cadetblue;
+}
