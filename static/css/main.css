@@ -51,3 +51,14 @@ a{
 .pf_blue {
 	color: cadetblue;
 }
+
+.brand {
+	/*color: red;*/
+color:#0147b7;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: xx-large;
+}
+.breaking {
+	display: block;
+	word-wrap: break-word;
+}
