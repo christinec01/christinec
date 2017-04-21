@@ -63,19 +63,21 @@
     <!-- Header -->
     <header id="top" class="header" >
         <div class="text-center">
-          <div class="type-wrap">
-          <div class="text_wrapper" id="typed-strings">
-          <span><h1 class="pf_blue_header">I'm a data-driven artist who can code. </h1></span>
-          <span><h1 class="pf_blue_header">My name is Christine Casebolt.^1000</h1></span>
-          </div>
-          <span id="typed" style="white-space:pre;"></span>
-      </div>
+          <!-- <div class="type-wrap"> -->
+          <!-- <div class="text_wrapper" id="typed-strings"> -->
+          <span><h2 class="pf_blue_header">I'm a data-driven artist who can code. </h2></span>
+          <span><h3 class="pf_blue_header">My name is Christine Casebolt.</h3></span>
+          <!-- </div> -->
+          <!-- <span id="typed" style="white-space:pre;"></span> -->
+      <!-- </div> -->
             <br>
-            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
-        </div>
-          </div>
-      </div>
     </header>
+        </div>
+        <br>
+      <div>
+        <a href="https://docs.google.com/document/d/1kHduKf4sbN4M7lC-WnFaKugbp7GAPQKanVZqkuF5h3c/edit?usp=sharing" class="btn btn-dark btn-lg">Find Out More</a>
+      </div>
+
 
     <!-- About -->
     <section id="about" class="about">
@@ -363,7 +365,7 @@
             typeSpeed: 80,
             backDelay: 500,
             loop: true,
-            contentType: 'html', // or text
+            contentType: 'text', // or text
             // defaults to false for infinite loop
             loopCount: 1,
             callback: function(){ foo(); },
@@ -379,7 +381,7 @@
 
     });
 
-    function newTyped(){ /* A new typed object */ }
+    // function newTyped(){ /* A new typed object */ }
 
     function foo(){ console.log("Callback"); }
 
