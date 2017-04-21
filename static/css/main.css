@@ -51,7 +51,11 @@ a{
 .pf_blue {
 	color: cadetblue;
 }
-
+.btn_blue {
+	border-radius: 2px;
+	color: #fff;
+	background-color: cadetblue;
+}
 .breaking {
 	display: block;
 	word-wrap: break-word;
