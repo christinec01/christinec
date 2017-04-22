@@ -11,8 +11,8 @@ export default class Header extends React.Component {
              <div className="type-wrap">
                <aside className="header-callout">
                      <div className="text_wrapper text-vertical-center" id="typed-strings">
-                       <h1>I'm a data-driven artist who can code.</h1>
-                       <h1>My name is Christine Casebolt.</h1>
+                       <h1>I'm a datas-driven artist who can code.</h1>
+                       <h1>My name is Steen Casebolt.</h1>
                      </div>
                      <span id="typed" />
                </aside>

@@ -1,6 +1,8 @@
 import React from 'react';
 import NavBar from './NavBar';
 import Header from './Header';
+import About from './About';
+import Services from './Services';
 
 export default class App extends React.Component {
   render() {
@@ -8,6 +10,8 @@ export default class App extends React.Component {
       <div>
         <NavBar />
         <Header />
+        <About />
+        <Services />
       </div>
     );
   }
