@@ -24,6 +24,7 @@ config.devServer = {
   inline: true,
   contentBase: path.resolve('./static/js'),
   publicPath: 'http://localhost:8080/',
+  headers: {"Access-Control-Allow-Origin": "*"},
 };
 
 config.plugins.push(
