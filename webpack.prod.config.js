@@ -11,7 +11,7 @@ config.entry = _.extend(config.entry, {
 });
 
 config.output = {
-  path: path.resolve('./static/bundles'),
+  path: path.resolve('./static/js/bundles'),
   filename: '[name]_bundle.js',
 };
 

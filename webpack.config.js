@@ -1,7 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const BundleTracker = require('webpack-bundle-tracker');
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
   context: __dirname,
@@ -10,9 +9,6 @@ module.exports = {
       'classnames',
       'react',
       'react-dom',
-      'react-tap-event-plugin',
-      'react-select',
-      'react-router',
       'lodash',
       'moment',
       'jquery',
@@ -28,12 +24,10 @@ module.exports = {
     new webpack.optimize.CommonsChunkPlugin({name: 'vendor', filename: 'vendor.js'}),
     new webpack.NamedModulesPlugin(),
     new BundleTracker({filename: './webpack-stats.json'}),
-    new ExtractTextPlugin("../css/[name].css"),
   ],
 
   module: {
     loaders: [
-      // we pass the output from babel loader to react-hot loader
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
@@ -41,17 +35,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: 'css-loader',
-        }),
+        loaders: ['css-loader'],
       },
       {
         test: /\.less$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: "css-loader!less-loader",
-        }),
+        loaders: ["css-loader!less-loader"],
       },
     ],
   },
